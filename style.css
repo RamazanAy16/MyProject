@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* 11px okunamayacak kadar küçük olabilir, 14px idealdir */
+    background-color: #06d7e6;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Tüm içeriği ortalamak ve düzenlemek için container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #d5c4c4; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333333; /* Arka plan beyaz olunca okunabilir olması için koyu renk */
+    font-size: 36px;
+    font-family: Georgia, serif;
+    text-align: center; /* Başlığı ortala */
+}
+
+h2 {
+    color: #ff5733;
+    font-size: 28px;
+    font-family: 'Courier New', monospace;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto; /* Üstten alttan boşluk bırakarak tam ortalar */
+}
+
+h1:hover {
+  animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+  0%   { color: rgb(0, 255, 34); }
+  50%  { color: red; }
+  100% { color: rgb(162, 255, 0); }
+}
